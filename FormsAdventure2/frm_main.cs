@@ -33,5 +33,10 @@ namespace FormsAdventure2
         {
 
         }
+
+        private void lbl_title_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
