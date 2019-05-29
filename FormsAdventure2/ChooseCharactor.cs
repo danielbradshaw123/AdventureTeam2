@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace FormsAdventure2
 {
-    public partial class frm_title : Form
+    public partial class ChooseCharactor : Form
     {
-        public frm_title()
+        public ChooseCharactor()
         {
             InitializeComponent();
         }
 
-        private void pbx_title_Click(object sender, EventArgs e)
+        private void textBoxName_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -26,7 +26,6 @@ namespace FormsAdventure2
         {
             GameController.player.name = textBoxName.Text;
             GameController.UpdatePnlCharacter();
-            ActiveForm.Close();
         }
     }
 }

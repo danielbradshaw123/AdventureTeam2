@@ -18,7 +18,6 @@ namespace FormsAdventure2
         public Character()
         {
             name = "Joe Blogs";
-            luck = 5;
             gold = 10;
             score = 0;
         }

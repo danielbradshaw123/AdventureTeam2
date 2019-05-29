@@ -47,6 +47,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="ChooseCharactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseCharactor.Designer.cs">
+      <DependentUpon>ChooseCharactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room16.Designer.cs">
+      <DependentUpon>Room16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room2.Designer.cs">
+      <DependentUpon>Room2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Room5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room5.Designer.cs">
+      <DependentUpon>Room5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartRoom1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartRoom1.Designer.cs">
+      <DependentUpon>StartRoom1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +105,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChooseCharactor.resx">
+      <DependentUpon>ChooseCharactor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_main.resx">
       <DependentUpon>frm_main.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +130,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Room5.resx">
+      <DependentUpon>Room5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room2.resx">
+      <DependentUpon>Room2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room16.resx">
+      <DependentUpon>Room16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartRoom1.resx">
+      <DependentUpon>StartRoom1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

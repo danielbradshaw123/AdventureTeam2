@@ -20,8 +20,8 @@ namespace FormsAdventure2
         private void Form1_Load(object sender, EventArgs e)
         {
             Form title = new frm_title();
-            title.ShowDialog();
             GameController.Start_game(this);
+            title.ShowDialog();
         }
 
         private void lbl_luck_Click(object sender, EventArgs e)
@@ -30,6 +30,41 @@ namespace FormsAdventure2
         }
 
         private void pnl_main_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_character_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_gold_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Close();
+        }
+
+        private void lbl_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_main_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_controls_Paint(object sender, PaintEventArgs e)
         {
 
         }
