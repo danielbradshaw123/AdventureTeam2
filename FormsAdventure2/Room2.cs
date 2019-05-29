@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace FormsAdventure2
 {
-    public partial class Location1 : Form
+    public partial class Room2 : Form
     {
-        public Location1()
+        public Room2()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            GameController.ShowSubform(new Location2());
-        }
-
-        private void Location1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

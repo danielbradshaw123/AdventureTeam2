@@ -10,7 +10,7 @@ namespace FormsAdventure2
     // class to contain functions to control the game and update the main form
     static class GameController
     {
-        private static Character player;
+        public static Character player;
         private static Form main;
         private static Panel main_panel;
 
@@ -31,7 +31,7 @@ namespace FormsAdventure2
             UpdatePnlCharacter();
 
             // display first location in panel on main form
-            ShowSubform(new Location1());
+            ShowSubform(new StartRoom1());
 
         }
 
@@ -49,16 +49,13 @@ namespace FormsAdventure2
 
 
         // used to update the character panel after any changes to character stats
-        private static void UpdatePnlCharacter()
+        public static void UpdatePnlCharacter()
         {
             Label foundlabel;
             foundlabel = (Label)main.Controls.Find("lbl_name",true).First();
             if (foundlabel != null)
                 foundlabel.Text = "Name: " + player.name;
 
-            foundlabel = (Label)main.Controls.Find("lbl_luck", true).First();
-            if (foundlabel != null)
-                foundlabel.Text = "Luck: " + player.luck;
 
             foundlabel = (Label)main.Controls.Find("lbl_gold", true).First();
             if (foundlabel != null)
